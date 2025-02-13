@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Funcionalidad para el botón "Sí"
-    document.getElementById("yesBtn").addEventListener("click", function () {
-        let mensaje = encodeURIComponent("¡Sí acepto! 💖");
-        window.open(`https://wa.me/51961995526?text=¡Sí, acepto! 💖`, "_blank");
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("yesBtn").addEventListener("click", function() {
+        let numero = "51961995526"; // Reemplaza con el número de WhatsApp
+        let mensaje = encodeURIComponent("¡Sí, acepto! 💖");
+        window.open(`https://wa.me/${numero}?text=${mensaje}`, "_blank");
     });
 
     // Funcionalidad para el botón "No"
