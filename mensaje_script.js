@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Funcionalidad para el botón "Sí"
     document.getElementById("yesBtn").addEventListener("click", function () {
         let mensaje = encodeURIComponent("¡Sí acepto! 💖");
-        window.location.href = `https://wa.me/?text=${mensaje}`;
+        window.open(`https://wa.me/51961995526?text=¡Sí, acepto! 💖`, "_blank");
     });
 
     // Funcionalidad para el botón "No"

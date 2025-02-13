@@ -90,7 +90,8 @@ body {
     }
 }
 
-/* Clase que se activa en el botón "No" */
 .fade-out {
     animation: fadeOut 1s ease-out forwards;
+    pointer-events: none; /* Evita que se pueda seguir clickeando */
 }
+
