@@ -1,9 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("yesBtn").addEventListener("click", function() {
-        let numero = "51961995526"; // Reemplaza con el número de WhatsApp
-        let mensaje = encodeURIComponent("¡Sí, acepto! 💖");
-        window.open(`https://wa.me/${numero}?text=${mensaje}`, "_blank");
-    });
+    let yesButton = document.getElementById("yesBtn");
+
+    if (yesButton) {  // Verifica si el botón existe antes de añadir el evento
+        yesButton.addEventListener("click", function() {
+            let numero = "51987654321"; // Reemplaza con el número real de WhatsApp
+            let mensaje = encodeURIComponent("¡Sí, acepto! 💖");
+            window.open(`https://wa.me/${numero}?text=${mensaje}`, "_blank");
+        });
+    } else {
+        console.error("Error: No se encontró el botón con ID 'yesBtn'. Revisa el HTML.");
+    }
+});
+
 
     // Funcionalidad para el botón "No"
     document.getElementById("noBtn").addEventListener("click", function () {
@@ -17,4 +25,4 @@ document.addEventListener("DOMContentLoaded", function() {
             noBtn.style.display = "none";
         }, 1000);
     });
-});
+
