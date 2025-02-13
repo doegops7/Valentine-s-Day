@@ -1,0 +1,96 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    flex-direction: column;
+    color: #ff4081;
+    padding: 20px;
+
+    /* Fondo adaptable */
+    background: url('https://i.pinimg.com/736x/40/c1/ae/40c1ae3be9716599cd9481331098ac92.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ajusta el tamaño para que cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+}
+
+/* Contenedor del mensaje principal */
+.message-container {
+    background: rgba(255, 182, 193, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Botón para ver la sorpresa */
+.btn {
+    font-size: 20px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+/* Contenedor de la pregunta (oculto por defecto) */
+#pregunta-container {
+    display: none; /* Se muestra solo cuando se da click en "Ver Sorpresa" */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background: rgba(255, 182, 193, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+}
+
+/* Texto de la pregunta */
+.pregunta-texto {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Contenedor de los botones (alineados en columna) */
+.botones {
+    display: flex;
+    flex-direction: column; /* Asegura que los botones estén en columna */
+    align-items: center;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+/* Ajustes para dispositivos grandes (PC) */
+@media (min-width: 768px) {
+    .message-container, #pregunta-container {
+        max-width: 60%;
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 22px;
+        padding: 12px 25px;
+    }
+    /* Ajuste del fondo para pantallas grandes */
+    body {
+        background-size: cover; /* Ajusta la imagen sin recortarla */
+        background-position: center; /* Enfoca la parte superior en móviles */
+    }
+
+}

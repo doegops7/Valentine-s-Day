@@ -1,0 +1,79 @@
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    color: #ff4081;
+
+    /* Fondo adaptable */
+    background: url('https://i.pinimg.com/736x/40/c1/ae/40c1ae3be9716599cd9481331098ac92.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Contenedor del mensaje */
+.mensaje-container {
+    background: rgba(255, 182, 193, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    font-size: 22px;
+}
+
+/* Título */
+.mensaje-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Texto del mensaje */
+.mensaje-texto {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    font-size: 20px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 250px;
+}
+
+.btn:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 768px) {
+    .mensaje-container {
+        max-width: 60%;
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 22px;
+        padding: 14px 30px;
+    }
+}
