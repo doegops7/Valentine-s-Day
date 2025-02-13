@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (yesButton) {  // Verifica si el botón existe antes de añadir el evento
         yesButton.addEventListener("click", function() {
-            let numero = "51987654321"; // Reemplaza con el número real de WhatsApp
+            let numero = "51961995526"; // Reemplaza con el número real de WhatsApp
             let mensaje = encodeURIComponent("¡Sí, acepto! 💖");
             window.open(`https://wa.me/${numero}?text=${mensaje}`, "_blank");
         });
